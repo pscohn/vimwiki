@@ -1,0 +1,166 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * require_self
+ * require_tree .
+ */
+
+
+body {
+/*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #F4F4F7;
+}
+
+h1, h2, h3 {
+  display: inline-block;
+  margin-bottom: .25em;
+}
+
+.m-b {
+  margin-bottom: 1em;
+}
+.m-t {
+  margin-top: 1em;
+}
+.m-l {
+  margin-left: 1em;
+}
+.m-r {
+  margin-right: 1em;
+}
+.m-b-l { margin-bottom: 2em }
+.main { margin-bottom: 2em }
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100% !important;
+}
+
+nav a, h1 a, h2 a, h3 a {
+  color: #5d5e61;
+}
+
+.state {
+  font-size: 12px;
+  padding: 2px 10px;
+  vertical-align: text-bottom;
+}
+
+.masthead {
+  background-color: #5da0f7;
+}
+
+.masthead-nav {
+  float: none;
+}
+
+.masthead-nav a {
+  color: white;
+}
+
+.masthead-nav a.btn {
+  color: #5da0f7;
+}
+
+.masthead-nav a:hover {
+  color: #ccc;
+}
+
+.masthead-nav a.btn:hover {
+  color: #5da0f7;
+}
+
+.path-listing {
+  background-color: white;
+}
+
+.progress-bar-container {
+  height: 1em;
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.progress-bar {
+  height: 1em;
+}
+
+.progress-stat {
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.landing li {
+  padding: .5em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-position: inside;
+}
+
+.list-actions {
+  border: 1px solid #ddd;
+  padding: 1em;
+  background: white;
+}
+
+.list-item-main {
+  background-color: white;
+  display: flex;
+  line-height: 35px;
+  padding: 5px;
+}
+
+.check {
+  border-radius: 3px;
+  border: 2px solid #ddd;
+  text-align: center;
+  margin-right: 1em;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  line-height: 31px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.small-check {
+  margin-right: .25em;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.check.complete {
+  border: 3px solid #3eb358;
+  background: #3eb358;
+}
+
+a.check, a.check:visited {
+  color: white;
+}
+
+a.check:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.checkmark {
+  display: inline-block;
+}
+
+.btn-with-count {
+  float: none;
+}
+
+#content {
+  white-space: pre;
+}

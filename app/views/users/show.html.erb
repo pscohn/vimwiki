@@ -1,0 +1,10 @@
+<% provide(:title, @user.username) %>
+<div>
+  <%= gravatar_for @user %>
+  <h1>
+    <%= @user.username %>
+  </h1>
+</div>
+<div class="user-description">
+  <%= simple_format(auto_link @user.description) %>
+</div>

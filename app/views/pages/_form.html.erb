@@ -1,0 +1,16 @@
+<%= form_for @page do |f| %>
+  <% if @page.id %>
+    <%= link_to 'View Page', @page, class: 'btn btn-default' %>
+    <%= f.submit "Save", class: 'btn' %>
+    <%= link_to 'Delete Page', page_path(@page),
+                  method: :delete,
+                  class: "btn btn-danger",
+                  data: { confirm: 'Are you sure you wanto to delete this page?' } %>
+  <% end %>
+  <dl class="form-group">
+    <dt><%= f.label :title %></dt>
+    <dd><%= f.text_field :title, class: 'form-control' %></dd>
+  </dl>
+  <%= f.label :content, 'Content' %>
+  <%= f.text_area :content, rows: 10 %>
+<% end %>

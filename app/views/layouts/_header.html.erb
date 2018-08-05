@@ -1,0 +1,22 @@
+<header class="masthead">
+  <div class="container">
+  <nav class="masthead-nav">
+
+    <%= link_to "Home", page_path('home') %>
+    <% if logged_in? %>
+      <span class="left">
+      <span class="right">
+        <%= link_to "Log out", logout_path, method: "delete" %>
+      </span>
+    <% else %>
+      <span class="left">
+        <%= link_to "PathPen", root_path, active: 'active' %>
+      </span>
+      <span class="right">
+        <%= link_to "Log in", login_path, active: 'active' %>
+        <%= link_to "Sign up", signup_path, active: 'active' %>
+      </span>
+    <% end %>
+  </nav>
+  </div>
+</header>

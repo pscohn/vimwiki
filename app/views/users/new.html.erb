@@ -1,0 +1,12 @@
+<% provide(:title, 'Sign up') %>
+<% provide(:button_text, 'Sign up') %>
+<div class="auth-form">
+  <h1>Sign up</h1>
+  <% if env('ALLOW_REGISTRATION', true) %>
+    <div class="panel">
+      <%= render 'form' %>
+    </div>
+  <% else %>
+    <p>Registration is currently closed.</p>
+  <% end %>
+</div>

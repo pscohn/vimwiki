@@ -1,0 +1,7 @@
+<% if @user.id %>
+<nav class="menu">
+  <span class="menu-heading">
+    <%= gravatar_for @user, size: 25 %> <%= @user.username %>
+  </span>
+</nav>
+<% end %>
